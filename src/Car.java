@@ -18,4 +18,39 @@ public class Car {
         this.type = type;
         this.year = year;
     }
+
+    public void startEngine(){
+        System.out.println("Автомобиль заведен");
+    }
+    public void stopEngine(){
+        System.out.println("Автомобиль заглушен");
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    void showInfo (){
+        System.out.println("Автомобиль: " + "цвет-" + color + " тип-" + type + " год-" + year);
+    }
+
+    public static void main(String[] args) {
+        Car car1 = new Car("black", "BMW M5", 2023);
+
+        car1.startEngine();
+        car1.stopEngine();
+        car1.color = "red";
+        car1.year = 2020;
+        car1.type = "AUDI RS";
+
+        car1.showInfo();
+    }
 }
