@@ -18,4 +18,27 @@ public class Car {
         this.type = type;
         this.year = year;
     }
+
+    public void startEngine(){
+        System.out.println("Автомобиль заведен");
+    }
+    public void stopEngine(){
+        System.out.println("Автомобиль заглушен");
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void showInfo (){
+        System.out.println("Автомобиль: " + "цвет-" + color + " тип-" + type + " год-" + year);
+    }
 }
